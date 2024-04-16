@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .center {
+    @apply flex justify-center items-center;
+  }
+
+  .navbar-button {
+    @apply center h-20 border-b-4 border-white px-4 duration-200 hover:border-green-500 hover:bg-zinc-100;
+  }
+}
+
+.float1 {
+  animation-name: bounce;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.float2 {
+  animation-name: bounce;
+  animation-duration: 3s;
+  animation-delay: -1s;
+  animation-iteration-count: infinite;
+}
+
+.float3 {
+  animation-name: bounce;
+  animation-duration: 3s;
+  animation-delay: -2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(0%, 0%)
+  }
+
+  50% {
+    transform: translate(0%, 10%)
+  }
+
+  100% {
+    transform: translate(0%, 0%)
+  }
+}
+
+/* 
+@keyframes bounce2 {
+  0% {
+    transform: translate(0%, 0%)
+  }
+
+  50% {
+    transform: translate(0%, -10%)
+  }
+
+  100% {
+    transform: translate(0%, 0%)
+  }
+}
+
+@keyframes bounce2 {
+  0% {
+    transform: translate(0%, 0%)
+  }
+
+  50% {
+    transform: translate(0%, 20%)
+  }
+
+  100% {
+    transform: translate(0%, 0%)
+  }
+} */
+
+.image-comparison-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.image-comparison-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.image-comparison-slider {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 2px;
+  cursor: ew-resize;
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e8312e"/>
+      <stop offset="1" stop-color="#af2723"/>
+    </linearGradient>
+  </defs>
+  <g id="p-sm-icon" transform="translate(-7172 15922)">
+    <rect id="Rectangle_1431" data-name="Rectangle 1431" width="17" height="17" rx="2" transform="translate(7172 -15922)" fill="url(#linear-gradient)"/>
+    <path id="iconmonstr-pinterest-1_2_" data-name="iconmonstr-pinterest-1 (2)" d="M6.5,0A6.5,6.5,0,0,0,4.131,12.552a6.214,6.214,0,0,1,.023-1.864c.118-.508.762-3.231.762-3.231a2.347,2.347,0,0,1-.194-.965c0-.9.524-1.578,1.176-1.578a.817.817,0,0,1,.822.915,13.069,13.069,0,0,1-.538,2.164.944.944,0,0,0,.963,1.175c1.155,0,2.043-1.218,2.043-2.976A2.566,2.566,0,0,0,6.472,3.547a2.813,2.813,0,0,0-2.935,2.82,2.525,2.525,0,0,0,.484,1.483.2.2,0,0,1,.045.187l-.18.737c-.029.119-.094.145-.218.087A2.914,2.914,0,0,1,2.349,6.343,3.94,3.94,0,0,1,6.643,2.41a3.815,3.815,0,0,1,4.007,3.754c0,2.24-1.412,4.043-3.373,4.043a1.738,1.738,0,0,1-1.49-.746l-.405,1.545a7.232,7.232,0,0,1-.808,1.7A6.5,6.5,0,1,0,6.5,0Z" transform="translate(7174 -15920)" fill="#fefefe" fill-rule="evenodd"/>
+  </g>
+</svg>

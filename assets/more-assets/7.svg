@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="42" viewBox="0 0 42 42">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#68db7c"/>
+      <stop offset="1" stop-color="#4b9b51"/>
+    </linearGradient>
+  </defs>
+  <g id="serv-icon-7" transform="translate(-400.436 -8393.392)">
+    <rect id="Rectangle_3617" data-name="Rectangle 3617" width="42" height="42" rx="5" transform="translate(400.436 8393.392)" fill="url(#linear-gradient)"/>
+    <path id="iconmonstr-smartphone-2" d="M20.934,2.419V24.871c-.53.628-3.387,1.739-7.251,1.739S6.954,25.5,6.419,24.87V2.419Zm0-2.419H6.419A2.419,2.419,0,0,0,4,2.419V25.011c0,2.677,5.447,4.018,9.682,4.018s9.67-1.338,9.67-4.018V2.419A2.419,2.419,0,0,0,20.934,0ZM13.676,24.191a1.21,1.21,0,1,1,1.21-1.21A1.21,1.21,0,0,1,13.676,24.191Z" transform="translate(407.759 8399.388)" fill="#fefefe"/>
+  </g>
+</svg>
