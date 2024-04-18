@@ -56,6 +56,7 @@ export default function Home() {
               start: isDesktop ? "20% bottom" : "top bottom",
               end: "top top",
               scrub: true,
+              markers: false,
             },
           });
 
@@ -66,6 +67,7 @@ export default function Home() {
               start: isMobile ? "90% bottom" : "80% bottom",
               end: isMobile ? "bottom top" : "bottom center",
               scrub: true,
+              markers: false,
             },
           });
         }

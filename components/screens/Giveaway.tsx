@@ -55,7 +55,7 @@ function Giveaway() {
             opacity: 1,
             scrollTrigger: {
               trigger: "#floating-tag-1",
-              markers: true,
+              markers: false,
               start: "-600px 70%",
               end: "+=60px",
               scrub: true,
@@ -74,7 +74,7 @@ function Giveaway() {
             opacity: 1,
             scrollTrigger: {
               trigger: "#floating-tag-2",
-              markers: true,
+              markers: false,
               start: "-600px 70%",
               end: "+=60px",
               scrub: true,
@@ -93,7 +93,7 @@ function Giveaway() {
             opacity: 1,
             scrollTrigger: {
               trigger: "#floating-tag-3",
-              markers: true,
+              markers: false,
               start: "-600px 70%",
               end: "+=60px",
               scrub: true,
