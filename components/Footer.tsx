@@ -12,12 +12,15 @@ const Footer = () => {
 
   return (
     <div className='flex flex-col mt-[250px]'>
-        <div className='flex flex-col px-[230px] pb-[50px] pt-[70px] gap-[20px] bg-[#FAFAFA] rounded-t-lg'>
-            <div className='flex justify-between'>
-                <div className='flex flex-col gap-[9px]'>
-                    <h4 className='text-[#212427] text-[18px] font-semibold'>Stay Informed</h4>
-                    <p className='text-[#525557] text-[14px]'>Get updates on fun stuff you probably want to know <br /> about in your inbox</p>
-                    <div className='flex items-center gap-[10px]'>
+        <div className='flex flex-col px-[20px] md:px-[150px] lg:px-[150px] pb-[20px] md:pb-[50px] lg:pb-[50px] pt-[20px] md:pt-[70px] lg:pt-[70px] gap-[20px] bg-[#FAFAFA] rounded-t-lg'>
+            <div className='block md:hidden lg:hidden pb-[20px]'>
+                <Image src='/logo.png' width={199.45} height={59.31} className='pt-[30px]' alt='icon' />
+            </div>
+            <div className='grid grid-cols-2 gap-[50px] md:flex lg:flex justify-between mb-[30px] md:mb-0 lg:mb-0'>
+                <div className='hidden md:flex lg:flex flex-col gap-[9px]'>
+                    <h4 className='flex text-[#212427] text-[18px] font-semibold'>Stay Informed</h4>
+                    <p className='flex text-[#525557] text-[14px]'>Get updates on fun stuff you probably want to know <br /> about in your inbox</p>
+                    <div className='flex items-center gap-[10px] '>
                         <input type="email" className='px-[20px] py-[15px] text-[14px] rounded-md border border-[#E0EFDC] input-shadow' placeholder='Email address' />
                         <button className='px-[19px] py-[16px] text-[14px] rounded-md bg-green bg-gradient-to-b from-green-400 to-green-600 font-bold text-white shadow-md duration-300 hover:bg-gradient-to-b hover:from-green-600 hover:to-green-400'>Subscribe</button>
                     </div>
@@ -75,23 +78,33 @@ const Footer = () => {
             </div>
 
             <div>
-                <p className='flex items-center justify-end pr-[20px] text-[14px] text-[#525557] gap-[5px]'>
+                <p className='hidden md:flex lg:flex items-center justify-end pr-[20px] text-[14px] text-[#525557] gap-[5px]'>
                     &copy; 2017-2024 Giveawayhopper. All rights reserved &bull; 
                     <Image alt='icon' src='/leaf-footer.png' width={18.86} height={17.26} className='h-[15px] w-[17px]' />
                     CO2 Neutral since launch &bull;
                     Made with <Image alt='icon' src='/heart-footer.png' width={18} height={5} className='h-[15px] w-[17px]' />
                     in The Netherlands 
                 </p>
+                <div className='absolute md:hidden lg:hidden border left-0 w-full' />
+                <p className='flex flex-col items-center justify-center pt-[30px] md:hidden lg:hidden'>
+                    <span className='flex items-center gap-[5px]'>
+                        <Image alt='icon' src='/leaf-footer.png' width={18.86} height={17.26} className='h-[15px] w-[17px]' />
+                        CO2 Neutral since launch
+                    </span>
+                    <span>
+                        &copy; 2017-2024 Giveawayhopper
+                    </span>
+                </p>
             </div>
         </div>
 
-        <div className='flex justify-between px-[230px] py-[30px] bg-[#F3F3F3]'>
+        <div className='flex items-center justify-between px-[20px] md:px-[150px] lg:px-[150px] py-[15px] bg-[#F3F3F3]'>
             <div>
-                <Image alt='icon' src='/gdpr.png' width={109} height={53} />
+                <Image alt='icon' src='/gdpr.png' width={109} height={53} className='w-[50px] md:w-[110px] lg:w-[110px]' />
             </div>
 
             <div>
-                <Image alt='icon' src='/payment-icons.png' width={446.36} height={53} />
+                <Image alt='icon' src='/payment-icons.png' width={446.36} height={53} className='w-[230px] md:w-[430px] lg:w-[430px]' />
             </div>
         </div>
     </div>

@@ -133,10 +133,10 @@ function GiveawayCard() {
   const [hide, setHide] = useState(false);
 
   return (
-    <div className="relative z-[5] mx-auto w-full max-w-[500px] rounded-xl bg-green-500 text-sm">
+    <div className="relative z-[10] mx-auto w-full max-w-[500px] rounded-xl bg-green-500 text-sm">
       <p className="mx-2 py-2 text-white">Simple Treasures Jewelry</p>
 
-      <div className="m-[4px] rounded-xl bg-white">
+      <div className="m-[4px] rounded-xl bg-white z-[10] mb-[30px]">
         <p className="py-6 text-center text-xl font-semibold">
           Giveaway: Win our latest Golden<br></br>and Silver bracelets!
         </p>
