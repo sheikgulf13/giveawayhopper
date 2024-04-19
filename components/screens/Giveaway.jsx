@@ -104,7 +104,7 @@ function Giveaway() {
     );
   });
   return (
-    <main className="my-20 py-20">
+    <main className="mb-20 mt-5 pb-20 pt-10">
       <h1 className="pt-20 text-center text-2xl font-bold lg:text-4xl">
         Here's what a giveaway looks like
       </h1>
@@ -114,7 +114,7 @@ function Giveaway() {
         for participants to join your giveaway.
       </p>
 
-      <div className="relative mt-20">
+      <div className="relative mt-10">
         <GiveawayCard />
 
         <div className="absolute top-[400px] z-[2] h-[500px] w-full bg-[#60bd67]" />
@@ -136,7 +136,7 @@ function GiveawayCard() {
     <div className="relative z-[10] mx-auto w-full max-w-[500px] rounded-xl bg-green-500 text-sm">
       <p className="mx-2 py-2 text-white">Simple Treasures Jewelry</p>
 
-      <div className="m-[4px] rounded-xl bg-white z-[10] mb-[30px]">
+      <div className="m-[4px] rounded-xl bg-white z-[10] -mb-[10px]">
         <p className="py-6 text-center text-xl font-semibold">
           Giveaway: Win our latest Golden<br></br>and Silver bracelets!
         </p>

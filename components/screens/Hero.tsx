@@ -33,9 +33,9 @@ function Hero() {
 
         <p className="mt-4 text-zinc-500">No credit card required</p>
 
-        <div className="flex gap-[20px] ml-[60px] mt-[30px]">
-          <Image src='/arrowGif.gif' width={40} height={40} alt="arrowgif" />
-          <Image src='/giveitatry.png' width={140} height={120} alt="tag" className="mt-[20px]" />
+        <div className="flex gap-[20px] ml-[140px] mt-[15px]">
+          <Image src='/arrowGif.gif' width={60} height={5} alt="arrowgif" />
+          <Image src='/giveitatry.png' width={120} height={100} alt="tag" className="mt-[20px]" />
         </div>
       </div>
 
