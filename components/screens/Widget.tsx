@@ -10,8 +10,8 @@ const Widget = () => {
       <div className='bg-gray-100 p-[20px] rounded-full'>
         <Image src='/drawing.png' width={45} height={45} alt='bg' />
       </div>
-      <h4 className='text-[40px] font-semibold'><span className='text-blue-400'>Personalized</span> Widget</h4>
-      <p className='text-[20px]'>Customize it with your favorite colors, banners, descriptions, and entry options.</p>
+      <h1 className='text-center text-3xl font-semibold lg:text-4xl'><span className='text-blue-400 text-center'>Personalized</span> Widget</h1>
+      <p className='md:text-[20px] text-center'>Customize it with your favorite colors, banners, descriptions, and entry options.</p>
       <ImageComparisonSlider />
     </div>
   )

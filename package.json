@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.0",
+    "@studio-freight/lenis": "^1.0.42",
     "aos": "^3.0.0-beta.6",
+    "framer-motion": "^11.1.7",
     "gsap": "^3.12.5",
     "lucide-react": "^0.367.0",
     "next": "14.1.4",
@@ -18,7 +20,8 @@
     "react-countup": "^6.5.3",
     "react-dom": "^18",
     "react-icons": "^5.1.0",
-    "react-scroll-trigger": "^0.6.14"
+    "react-scroll-trigger": "^0.6.14",
+    "sass": "^1.75.0"
   },
   "devDependencies": {
     "@types/node": "^20",

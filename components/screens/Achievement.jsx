@@ -57,7 +57,7 @@ function Achievement() {
             {
               counterOn && (
                 <p className="my-2 mt-4 text-xl font-semibold lg:text-3xl">
-                  <CountUp start={0} end={1} duration={2} delay={0} />+
+                  <CountUp start={0} end={1} duration={2} delay={1.8} />M+
                 </p>
               )
             }

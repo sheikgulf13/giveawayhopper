@@ -104,7 +104,7 @@ function Giveaway() {
     );
   });
   return (
-    <main className="mb-20 mt-5 pb-20 pt-10">
+    <main className="mb-20 mt-5 pb-20 pt-10 px-[10px] md:px-0">
       <h1 className="pt-20 text-center text-2xl font-bold lg:text-4xl">
         Here's what a giveaway looks like
       </h1>

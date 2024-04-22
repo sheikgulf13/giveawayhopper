@@ -79,7 +79,7 @@ export default function Home() {
     <div>
       <Navbar />
       <div
-        className="relative h-[3600px] mb-[100px] overflow-y-hidden lg:h-[2200px]"
+        className="relative h-[3900px] mb-[100px] overflow-y-hidden lg:h-[2200px]"
         id="container"
       >
         <Hero />

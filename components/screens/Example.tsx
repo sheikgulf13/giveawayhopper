@@ -38,9 +38,9 @@ function Example() {
       </h1>
 
       <div className="center flex-wrap gap-10">
-        {examples.map((example) => {
+        {examples.map((example, index) => {
           const { image, title, content } = example;
-          return <ExampleCard image={image} title={title} content={content} />;
+          return <ExampleCard key={index} image={image} title={title} content={content} />;
         })}
       </div>
 
