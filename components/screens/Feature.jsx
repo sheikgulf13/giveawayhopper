@@ -134,9 +134,9 @@ function Feature() {
     target: featureRef,
     offset: ["start end", "end start"],
   })
-  const scale = useTransform(scrollYProgress, [0, 0.5, 1], [0.8, 1, 0.8])
+  const scale = useTransform(scrollYProgress, [0, 0.4, 0.6, 1], [0.6, 1, 1, 0.6])
   const opacity = useTransform(scrollYProgress, [0.4, 0.5, 0.6], [0, 1, 0])
-  const radius = useTransform(scrollYProgress, [0.4, 0.5, 0.6], ["50px", "0px", "50px"])
+  const radius = useTransform(scrollYProgress, [0, 0.4, 0.6, 1], ["50px", "0px", "0px", "50px"])
 
   return (
     <main ref={containerRef} className="relative max-w-[100vw] h-full md:h-[600vh] w-full  my-[100px]" id="features">
@@ -147,46 +147,58 @@ function Feature() {
             {/*Progress Bar*/}
             <div className="">
               <div className="h-[130px] w-[3px]">
-                <div className={`w-full bg-green-500 max-h-[480%] rounded-full transition-all duration-100`} style={{height: `${scrollPercentage}%`}}></div>
+                <div style={{height: `${scrollPercentage}%`}}  className={`w-full bg-green-500 max-h-[480%] rounded-full transition-all ease-in-out`} ></div>
               </div>
             </div>
 
             {/* Title and Description Container*/}
             <div
               id="title-description-container"
-              className="flex w-[50%] flex-col gap-[50px] py-[20px] items-start justify-center -z-10 transition-all duration-200"
+              className="flex w-[60%] flex-col gap-[50px] py-[20px] items-start justify-center -z-10 transition-all duration-200"
             >
-              <div id="section1" className={`${scrollPercentage > 0 && scrollPercentage < 125 ? 'opacity-100' : 'opacity-30'}`}>
-                <h1 className="text-2xl font-semibold">
-                  Customizable Entry Options
-                </h1>
-                <p className="mb-4 mt-2 text-zinc-500">
-                    Connect with your audience through our variety of actions as entry
-                    options.
-                </p>
+              <div id="section1" className={`${scrollPercentage > 0 && scrollPercentage < 125 ? 'opacity-100' : 'opacity-30'} flex items-start gap-[15px]`}>
+                <Image src='/custom.png' width={42} height={42} alt="" />
+                <div>
+                  <h1 className="text-2xl font-semibold">
+                    Customizable Entry Options
+                  </h1>
+                  <p className="mb-4 mt-2 text-zinc-500">
+                      Connect with your audience through our variety of actions as entry
+                      options.
+                  </p>
+                </div>
               </div>
 
-              <div id="section2" className={`${scrollPercentage > 125 && scrollPercentage < 251 ? 'opacity-100' : 'opacity-30'}`}>
-                <h1 className="text-2xl font-semibold">Verified Actions</h1>
-                <p className="mb-4 mt-2 text-zinc-500">
-                  We verify if participants complete actions fairly.
-                </p>
+              <div id="section2" className={`${scrollPercentage > 125 && scrollPercentage < 251 ? 'opacity-100' : 'opacity-30'} flex items-start gap-[15px]`}>
+                <Image src='/shield.png' width={38} height={38} alt="" />
+                <div>
+                  <h1 className="text-2xl font-semibold">Verified Actions</h1>
+                  <p className="mb-4 mt-2 text-zinc-500">
+                    We verify if participants complete actions fairly.
+                  </p>
+                </div>
               </div>
 
-              <div id="section3" className={`${scrollPercentage > 250 && scrollPercentage < 376 ? 'opacity-100' : 'opacity-30'}`}>
-                <h1 className="text-2xl font-semibold">Fair Winner Selection</h1>
-                <p className="mb-4 mt-2 text-zinc-500">
-                  Send prizes to winners instantly with our automated prize
-                  delivery.
-                </p>
+              <div id="section3" className={`${scrollPercentage > 250 && scrollPercentage < 376 ? 'opacity-100' : 'opacity-30'} flex items-start gap-[15px]`}>
+                <Image src='/shuffle.png' width={30} height={30} alt="" />
+                <div>
+                  <h1 className="text-2xl font-semibold">Fair Winner Selection</h1>
+                  <p className="mb-4 mt-2 text-zinc-500">
+                    Send prizes to winners instantly with our automated prize
+                    delivery.
+                  </p>
+                </div>
               </div>
 
-              <div id="section4" className={`${scrollPercentage > 375 ? 'opacity-100' : 'opacity-30'}`}>
-                <h1 className="text-2xl font-semibold">Automatic Prize Delivery</h1>
-                <p className="mb-4 mt-2 text-zinc-500">
-                  Send prizes to winners instantly with our automated prize
-                  delivery.
-                </p>
+              <div id="section4" className={`${scrollPercentage > 375 ? 'opacity-100' : 'opacity-30'} flex items-start gap-[15px]`}>
+                <Image src='/priceTag.png' width={33} height={33} alt="" />
+                <div>
+                  <h1 className="text-2xl font-semibold">Automatic Prize Delivery</h1>
+                  <p className="mb-4 mt-2 text-zinc-500">
+                    Send prizes to winners instantly with our automated prize
+                    delivery.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

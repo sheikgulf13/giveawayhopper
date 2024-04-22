@@ -11,7 +11,7 @@ const ImageComparisonSlider = () => {
   const [sliderPosition, setSliderPosition] = useState(50);
   const [isDragging, setIsDragging] = useState(false);
 
-  const handleMove = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+  const handleMove = (event) => {
     if (!isDragging) return;
 
     const rect = event.currentTarget.getBoundingClientRect();
@@ -30,11 +30,13 @@ const ImageComparisonSlider = () => {
   };
 
   return (
-    <div className="w-full relative mt-[15px]" onMouseUp={handleMouseUp}>
+    <div className="w-full relative mt-[15px]" onTouchEnd={handleMouseUp} onMouseUp={handleMouseUp}>
       <div
-        className="relative w-full max-w-[1118px] h-[628px] aspect-[70/45] m-auto overflow-hidden select-none"
+        className="relative w-full max-w-[700px] h-[500px] md:max-w-[1118px] md:h-[628px] aspect-[70/45] m-auto overflow-hidden select-none"
         onMouseMove={handleMove}
         onMouseDown={handleMouseDown}
+        onTouchMove={handleMove}
+        onTouchStart={handleMouseDown}
       >
         <Image
           alt=""
@@ -42,10 +44,19 @@ const ImageComparisonSlider = () => {
           draggable={false}
           priority
           src="/afterImage.png"
+          className="hidden md:block"
+        />
+        <Image
+          alt=""
+          fill
+          draggable={false}
+          priority
+          src="/afterImageMob.png"
+          className="block md:hidden"
         />
 
         <div
-          className="absolute top-0 left-0 right-0 w-full max-w-[1118px] h-[628px] aspect-[70/45] m-auto overflow-hidden select-none"
+          className="absolute top-0 left-0 right-0 w-full max-w-[700px] h-[500px] md:max-w-[1118px] md:h-[628px] aspect-[70/45] m-auto overflow-hidden select-none"
           style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
         >
           <Image
@@ -54,6 +65,15 @@ const ImageComparisonSlider = () => {
             draggable={false}
             alt=""
             src="/beforeImage.png"
+            className="hidden md:block"
+          />
+          <Image
+            fill
+            priority
+            draggable={false}
+            alt=""
+            src="/beforeImageMob.png"
+            className="block md:hidden"
           />
         </div>
         <div
