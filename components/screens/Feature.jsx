@@ -244,7 +244,7 @@ function Feature() {
                 our automated systems in place.
                 </p>
                 <button className="my-4 rounded-md bg-gradient-to-b from-green-400 to-green-600 px-6 py-2 text-white shadow-md duration-300 hover:bg-gradient-to-b hover:from-green-600 hover:to-green-400">
-                  Start Your First Giveaway - It's free!
+                  Start Your First Giveaway - It&apos;s free!
                 </button>
               </div>
             </div>
@@ -351,7 +351,7 @@ function Feature() {
             </p>
 
             <button className="my-4 rounded-md bg-gradient-to-b from-green-400 to-green-600 px-6 py-2 text-white shadow-md duration-300 hover:bg-gradient-to-b hover:from-green-600 hover:to-green-400">
-              Start Your First Giveaway - It's free!
+              Start Your First Giveaway - It&apos;s free!
             </button>
           </div>
 

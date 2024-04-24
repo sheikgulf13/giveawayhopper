@@ -92,7 +92,7 @@ export default function Home() {
     loading
       ? document.querySelector("body").classList.add("loading")
       : document.querySelector("body").classList.remove("loading");
-  }, []);
+  }, [loading]);
 
   return (
       <AnimatePresence>

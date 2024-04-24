@@ -106,7 +106,7 @@ function Giveaway() {
   return (
     <main className="mb-20 mt-5 pb-20 pt-10 px-[10px] md:px-0">
       <h1 className="pt-20 text-center text-2xl font-bold lg:text-4xl">
-        Here's what a giveaway looks like
+        Here&apos;s what a giveaway looks like
       </h1>
 
       <p className="my-6 text-center text-lg lg:text-xl">
@@ -147,7 +147,7 @@ function GiveawayCard() {
           Win the perfect duo of elegance and style! Enter now for a chance to
           win a stunning silver and gold bracelet set worth $285 USD. Elevate
           your accessory game and add a touch of sophistication to any outfit.
-          Don't miss out! Enter today for your shot at this glamorous prize! ✨
+          Don&apos;t miss out! Enter today for your shot at this glamorous prize! ✨
         </p>
 
         <div className="mb-10 flex gap-6 px-4">

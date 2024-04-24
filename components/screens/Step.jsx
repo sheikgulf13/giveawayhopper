@@ -40,9 +40,12 @@ const steps = [
 function Step() {
   return (
     <main className="relative mt-40 bg-zinc-100 pb-10" id="step">
-      <img
+      <Image
         src='/grass.png'
         alt="bg"
+        width={240}
+        height={170}
+        unoptimized
         className="absolute top-[-70px] h-20 w-full"
       />
 
@@ -71,9 +74,12 @@ function Step() {
         })}
       </div>
 
-      <img
+      <Image
         src='/greyBottom.png'
         alt="bg"
+        width={240}
+        height={170}
+        unoptimized
         className="absolute bottom-[-70px] h-20 w-full"
       />
     </main>
