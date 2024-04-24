@@ -1,4 +1,5 @@
 "use client";
+
 import Achievement from "@/components/screens/Achievement";
 import Feature from "@/components/screens/Feature";
 import Giveaway from "@/components/screens/Giveaway";
@@ -79,11 +80,13 @@ export default function Home() {
   });
 
   const [loading, setLoading] = useState(true);
+  const [visited, setVisited] = useState(false);
 
-  const visitedBefore = JSON.parse(sessionStorage.getItem('visitedBefore'));
   useEffect(() => {
+    const visitedBefore = JSON.parse(sessionStorage.getItem('visitedBefore'));
     if (visitedBefore) {
       setLoading(false);
+      setVisited(true)
     } else {
       setTimeout(() => {
         JSON.stringify(sessionStorage.setItem('visitedBefore', true));
@@ -102,12 +105,12 @@ export default function Home() {
           </motion.div>
         ) : (
           <div>
-            <Navbar loading={loading} visitedBefore={visitedBefore} />
+            <Navbar loading={loading} visitedBefore={visited} />
             <div
               className="relative h-[3900px] mb-[100px] overflow-y-hidden lg:h-[2200px]"
               id="container"
             >
-              <Hero loading={loading} visitedBefore={visitedBefore} />
+              <Hero loading={loading} visitedBefore={visited} />
               <div id="step" className="bg-white">
                 <Step />
               </div>
