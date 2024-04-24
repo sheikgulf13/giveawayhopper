@@ -27,6 +27,7 @@ const Footer = () => {
                     <Image src='/logo.png' width={239.45} height={79.31} className='pt-[30px]' alt='icon' />
                     <p className='flex items-center text-[14px] gap-[5px] pt-[15px]'>By <Image alt='icon' src='/sirmo_logo.png' width={16} height={13} className='h-[16px] w-[17px]' /> Sirmo</p>
                 </div>
+
                 <div className='flex flex-col gap-[9px]'>
                     <h4 className='text-[#212427] text-[18px] font-semibold'>Product</h4>
                     <Link href='/' className='text-[#525557] hover:text-[#8e8f90] text-[14px]'>Pricing</Link>
@@ -34,12 +35,14 @@ const Footer = () => {
                     <Link href='/' className='text-[#525557] hover:text-[#8e8f90] text-[14px]'>Examples</Link>
                     <Link href='/' className='text-[#525557] hover:text-[#8e8f90] text-[14px]'>Blog</Link>
                 </div>
+
                 <div className='flex flex-col gap-[9px]'>
                     <h4 className='text-[#212427] text-[18px] font-semibold'>Company</h4>
                     <Link href='/' className='text-[#525557] hover:text-[#8e8f90] text-[14px]'>About Us</Link>
                     <Link href='/' className='text-[#525557] hover:text-[#8e8f90] text-[14px]'>Jobs</Link>
                     <Link href='/' className='text-[#525557] hover:text-[#8e8f90] text-[14px]'>Support</Link>
                 </div>
+
                 <div className='flex flex-col gap-[9px]'>
                     <h4 className='text-[#212427] text-[18px] font-semibold'>Industries</h4>
                     <Link href='/' className='text-[#525557] hover:text-[#8e8f90] text-[14px]'>E-Commerce</Link>
@@ -49,6 +52,7 @@ const Footer = () => {
                     <Link href='/' className='text-[#525557] hover:text-[#8e8f90] text-[14px]'>Content Creation</Link>
                     <Link href='/' className='text-[#525557] hover:text-[#8e8f90] text-[14px]'>All industries</Link>
                 </div>
+
                 <div className='flex flex-col gap-[9px]'>
                     <h4 className='text-[#212427] text-[18px] font-semibold'>Legal</h4>
                     <Link href='/' className='text-[#525557] hover:text-[#8e8f90] text-[14px]'>Terms of Service</Link>
@@ -56,6 +60,7 @@ const Footer = () => {
                     <Link href='/' className='text-[#525557] hover:text-[#8e8f90] text-[14px]'>Disclaimer</Link>
                     <Link href='/' className='text-[#525557] hover:text-[#8e8f90] text-[14px]'>Cookies</Link>
                 </div>
+                
                 <div className='flex flex-col gap-[9px]'>
                     <h4 className='text-[#212427] text-[18px] font-semibold'>Social</h4>
                     <Link href='/' className='flex items-center gap-[10px] text-[14px] text-[#525557] hover:opacity-70'>

@@ -125,7 +125,6 @@ function Feature() {
       const offsetTop = containerRef.current.offsetTop;
       const scrollPercent = ((window.scrollY - offsetTop) / window.innerHeight) * 100;
       setScrollPercentage(Math.floor(scrollPercent))
-      console.log(scrollPercentage);
     }
     
   })
