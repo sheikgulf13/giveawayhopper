@@ -107,7 +107,7 @@ export default function Home() {
           <div>
             <Navbar loading={loading} visitedBefore={visited} />
             <div
-              className="relative h-[3900px] mb-[100px] overflow-y-hidden lg:h-[2200px]"
+              className="relative h-[3900px] mb-[100px] overflow-y-hidden md:max-h-[3000px] md:h-full"
               id="container"
             >
               <Hero loading={loading} visitedBefore={visited} />

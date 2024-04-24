@@ -11,7 +11,7 @@ import Image from 'next/image';
 const Footer = () => {
 
   return (
-    <div className='flex flex-col mt-[250px]'>
+    <div className='flex flex-col mt-[250px] max-w-[100vw] w-full'>
         <div className='flex flex-col px-[20px] md:px-[150px] lg:px-[150px] pb-[20px] md:pb-[50px] lg:pb-[50px] pt-[20px] md:pt-[70px] lg:pt-[70px] gap-[20px] bg-[#FAFAFA] rounded-t-lg'>
             <div className='block md:hidden lg:hidden pb-[20px]'>
                 <Image src='/logo.png' width={199.45} height={59.31} className='pt-[30px]' alt='icon' />
