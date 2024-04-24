@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/Footer.tsx", "app/page.jsx", "components/screens/Achievement.jsx", "components/screens/Feature.jsx", "components/screens/Giveaway.jsx", "app/layout.tsx", "components/screens/More.tsx", "components/screens/ImageComparisonSlider.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/Footer.jsx", "app/page.jsx", "components/screens/Achievement.jsx", "components/screens/Feature.jsx", "components/screens/Giveaway.jsx", "app/layout.jsx", "components/screens/More.jsx", "components/screens/ImageComparisonSlider.jsx", "components/screens/Hero.jsx", "components/Navbar.jsx", "components/screens/Example.jsx", "components/screens/Last.jsx", "components/screens/Step.jsx", "components/screens/Widget.jsx"],
   "exclude": ["node_modules"]
 }

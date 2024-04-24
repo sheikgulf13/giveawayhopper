@@ -56,7 +56,7 @@ function Step() {
       </p>
 
       <div className="center mt-20 flex-col gap-20 lg:flex-row lg:items-start">
-        {steps.map((s: any) => {
+        {steps.map((s) => {
           const { image, step, title, content, link } = s;
           return (
             <StepCard
@@ -80,15 +80,8 @@ function Step() {
   );
 }
 
-interface StepCardPropType {
-  image: any;
-  step: any;
-  title: string;
-  content: string;
-  link: string;
-}
 
-function StepCard({ image, step, title, content, link }: StepCardPropType) {
+function StepCard({ image, step, title, content, link }) {
   return (
     <div className="w-full max-w-[300px] flex-col">
       <div className="center h-72">

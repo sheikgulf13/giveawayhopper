@@ -92,13 +92,7 @@ function More() {
   );
 }
 
-interface MoreCardPropType {
-  logo: any;
-  title: string;
-  content: string;
-}
-
-function MoreCard({ logo, title, content }: MoreCardPropType) {
+function MoreCard({ logo, title, content }) {
   return (
     <div className="w-full max-w-[500px]">
       <div className="center my-2 justify-start gap-2">

@@ -54,13 +54,7 @@ function Example() {
   );
 }
 
-interface ExampleCardPropType {
-  image: any;
-  title: string;
-  content: string;
-}
-
-function ExampleCard({ image, title, content }: ExampleCardPropType) {
+function ExampleCard({ image, title, content }) {
   return (
     <div className="center min-h-32 w-full max-w-[500px] justify-start gap-6 rounded-md bg-white p-4 duration-300 hover:scale-105">
       <Image src={image} alt="logo" className="w-10" />

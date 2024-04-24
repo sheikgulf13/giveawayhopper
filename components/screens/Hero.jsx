@@ -7,18 +7,33 @@ import Person2 from "@/assets/hero-assets/person2.webp";
 import Person3 from "@/assets/hero-assets/person3.webp";
 import Person4 from "@/assets/hero-assets/person4.webp";
 import Person5 from "@/assets/hero-assets/person5.webp";
+import { motion } from "framer-motion";
 
-function Hero() {
+function Hero({ loading, visitedBefore }) {
   return (
     <main
       className="lg:center relative mx-auto my-10 w-full max-w-[1400px] p-4 py-10"
       id="hero"
     >
       <div className="w-full lg:mr-20 lg:w-[30%]">
-        <h1 className="text-4xl font-bold">
-          The <span className="text-green-500">Easiest</span> Way to Grow With{" "}
-          <span className="text-green-500">Giveaways</span>.
-        </h1>
+        {
+          !visitedBefore && !loading ? (
+            <motion.h1
+              transition={{ ease: [0.2, 0.2, 0.2, 0.9], duration: 1.1 }}
+              layoutId='Hero-Text' 
+              className="text-4xl font-bold"
+            >
+              The <span className="text-green-500">Easiest</span> Way to Grow With{" "}
+              <span className="text-green-500">Giveaways</span>.
+            </motion.h1>
+          ) : (
+            <h1 className="text-4xl font-bold">
+              The <span className="text-green-500">Easiest</span> Way to Grow With{" "}
+              <span className="text-green-500">Giveaways</span>.
+            </h1>
+
+          )
+        }
 
         <p className="my-8 text-xl">
           Set up giveaways in just 2 minutes! Grow followers, likes, website
@@ -34,7 +49,7 @@ function Hero() {
         <p className="mt-4 text-zinc-500">No credit card required</p>
 
         <div className="flex gap-[20px] ml-[140px] mt-[15px]">
-          <Image src='/arrowGif.gif' width={60} height={5} alt="arrowgif" />
+          <Image src='/arrowGif.gif' width={60} height={5} alt="arrowgif" unoptimized />
           <Image src='/giveitatry.png' width={120} height={100} alt="tag" className="mt-[20px]" />
         </div>
       </div>

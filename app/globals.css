@@ -122,3 +122,8 @@
 .wrap {
   height: 200vh;
 }
+
+body.loading {
+  overflow: hidden;
+  height: 100vh;
+}

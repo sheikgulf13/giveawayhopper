@@ -2,17 +2,31 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 import Logo from "@/assets/navbar-assets/logo.svg";
 import { ChevronDown, Menu, X } from "lucide-react";
 
-function Navbar() {
+function Navbar({ loading, visitedBefore }) {
   const [open, setOpen] = useState(false);
   return (
     <nav className="center relative mx-auto w-full max-w-[1400px] justify-between px-4 py-4 text-xl shadow-sm lg:px-16 lg:py-0">
-      <Link href={"/"}>
-        <Image src={Logo} alt="logo" />
-      </Link>
+      {
+        !visitedBefore && !loading ? (
+          <motion.div 
+            transition={{ ease: [0.2, 0.2, 0.2, 0.9], duration: 0.9 }}
+            layoutId='logo'
+          >
+            <Link href={"/"}>
+              <Image src={Logo} alt="logo" />
+            </Link>
+          </motion.div>
+        ) : (
+            <Link href={"/"}>
+              <Image src={Logo} alt="logo" />
+            </Link>
+        )
+      }
 
       <div className="lg:center hidden">
         <button className="navbar-button gap-1">
