@@ -96,17 +96,17 @@ const ImageComparisonSlider = () => {
           }}
         >
           <div className="absolute rounded-full h-[30px] w-[30px] -left-3 top-[calc(50%-5px)]" >
-            <Image src='/sliderHandle.png' width={100} height={100} alt='bg' />
+            <Image src='/sliderHandle.png' width={100} height={100} alt='bg' draggable={false} />
           </div>
         </div>
         <div
-          className="absolute md:hidden top-0 bottom-0 w-1 bg-black cursor-pointer"
+          className="absolute md:hidden top-0 bottom-0 w-1 bg-black cursor-pointer touch-none pointer-events-none select-none"
           style={{
             left: `${touchSliderPosition}%`,
           }}
         >
-          <div className="absolute rounded-full h-[30px] w-[30px] -left-3 top-[calc(50%-5px)]" >
-            <Image src='/sliderHandle.png' width={100} height={100} alt='bg' />
+          <div className="absolute rounded-full h-[30px] w-[30px] -left-3 top-[calc(50%-5px)] touch-none" >
+            <Image src='/sliderHandle.png' width={100} height={100} alt='bg' draggable={false} />
           </div>
         </div>
       </div>
